@@ -48,7 +48,6 @@ class treeNode {
     this.folderName = folderName; // node
   }
   folderSize = 0;
-  // children = []; // node arr
 }
 const treeTop = new treeNode('/');
 

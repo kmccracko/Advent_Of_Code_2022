@@ -81,9 +81,9 @@ for (let cmd of records) {
     // cd x : push current to breadcrumbs, make x current
     else {
       const dirName = cmd.slice(5);
-      if (currentNode !== treeTop) breadCrumbs.push(currentNode); // Past
-      breadCrumbsStrings.push(dirName); // Present
-      currentNode = allNodes[breadCrumbsStrings.join('🔥')]; // Past that's trying to be the present?
+      if (currentNode !== treeTop) breadCrumbs.push(currentNode);
+      breadCrumbsStrings.push(dirName);
+      currentNode = allNodes[breadCrumbsStrings.join('🔥')];
     }
   }
   // if result of ls
